@@ -1,0 +1,22 @@
+Cause ID,Reason,Uer Reason
+15--378,"15:378,UpdHss Ack Fail（HSS在ULA里回复DIAMETER_ERROR_UNKNOWN_EPS_SUBSCRIPTION(5420)）",用户原因
+15--355,"15:355,Get Auth Vector from HSS Failed（HSS在ALA里回复DIAMETER_ERROR_UNKNOWN_EPS_SUBSCRIPTION(5420)）",用户原因
+19--391,"19:391,Create Bearer APN error。详细原因是SM：50:167：PDN type IPv4 only allowed---Check APN or PDN Type Fail，这个应该是用户用IPv6去激活PDN被拒绝,引发附着失败",用户原因的ESM失败
+17--346,"17:346,Auth Timeout鉴权超时, 终端接入过程中MME向终端发起鉴权请求等待响应超时，引发网络失败",网络原因
+14--584,"14:584, EPS services not allowed in this PLMN,内部原因584未知",网络原因
+7--355,"7:355, EPS services not allowed, Get Auth Vector from HSS Failed应该是非法用户接入，用户的IMSI在HSS中未找到。HSS拒绝MME对该用户的鉴权，拒绝原因值为DIAMETER_ERROR_USER_UNKNOWN (5001)",用户原因
+17--358,"17:358,Send SMC Timeout，终端接入过程中MME向终端发起安全模式请求等待响应超时，引发网络失败",网络原因
+19--384,"19:384,ESM failure-Pre Create Bearer APN error。对应的SM失败原因：53:141，ESM information not received-Wait UE Message Timeout。MME向终端发送ESM information request，终端未响应",网络原因
+9--334,"9:334,UE identity cannot be derived by the network-Resend message timeout ,UE标识不能在网络侧得到",网络原因
+19--394,"19:394,ESM failure-Create Bearer XGW error,一般是发送CSR对方PGW无响应，实际中抓到过国际用户，使用internet.globe.com.ph的APN激活，对方PGW无响应的情况",网络原因
+13--378,"13:378,Roaming not allowed in this tracking area-UpdHss Ack Fail",网络原因
+15--360,"15:360,Receive SMC Reject安全模式被终端拒绝",网络原因
+17--355,"17:355,Get Auth Vector from HSS Failed，终端发起附着后，MME向HSS获取鉴权向量失败,IMSI为440102052292248.也有460005013862090这样的国内IMSI号段",网络原因
+11--561,"11:561,PLMN not allowed -Fail to set IMEI-Mapped-IMSI Flag in Emergency Call这种用户失败日志中也看不到IMSI",网络原因
+7--378,"7:378, EPS services not allowed -UpdHss Ack Fail，HSS返回DIAMETER_ERROR_UNKNOWN_EPS_SUBSCRIPTION(5420)with diagnostic:NO_GPRS_DATA_SUBSCRIBED(1),应该是用户未签约2G/3G/4G PS签约，有CS签约或PS域停机",用户的7#原因
+17--390,"17:390,Create Bearer Timeout",网络原因
+3--351,"3:351, Illegal UE -Id Rsp Check Fail",用户原因
+17--370,"17:370, Drift Creat Table Failed",网络原因
+3--349,"3:349,Illegal UE- UE Auth Fail终端鉴权失败",用户原因
+3--348,"3:348,Illegal UE- Auth Failed",用户原因
+21,其他非典型失败,
